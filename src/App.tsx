@@ -3,6 +3,7 @@ import { HashRouter, Route } from 'react-router-dom';
 import Swap from './page/swap';
 import Test from './page/test';
 import StarrySky from './components/bg/StarrySky';
+import NavTab from './components/header/NavTab';
 import './App.css';
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <StarrySky />
       <HashRouter>
-        <div>111111111</div>
+        <NavTab></NavTab>
         <Route path="/swap" component={Swap} />
         <Route path="/test" component={Test} />
       </HashRouter>
